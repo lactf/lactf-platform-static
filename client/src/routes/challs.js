@@ -59,7 +59,7 @@ const Challenges = ({ classes }) => {
       const instancerPlaceholderRegex = /\{instancer:([a-zA-Z0-9-]+)\}/g
       if (config.instancerUrl !== '') {
         data.forEach(problem => {
-          problem.description = problem.description.replaceAll('{instancer}', `[Deploy challenge](${encodeURI(config.instancerUrl)}/chall/${problem.id}})`)
+          problem.description = problem.description.replaceAll('{instancer}', `[Deploy challenge](${encodeURI(config.instancerUrl)}/chall/${problem.id})`)
           problem.description = problem.description.replaceAll('{instancer_token}', 'x')
           problem.description = problem.description.replaceAll('{instancer_url}', encodeURI(config.instancerUrl))
           problem.description = problem.description.replaceAll(instancerPlaceholderRegex, `${encodeURI(config.instancerUrl)}/chall/$1`)
