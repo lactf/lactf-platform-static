@@ -1,0 +1,1 @@
+{"kind":"goodUserData","message":"The user data was successfully retrieved.","data":{"name":"KrSec","ctftimeId":null,"division":"open","score":101,"globalPlace":858,"divisionPlace":840,"solves":[{"category":"pwn","name":"tic-tac-no","points":101,"solves":475,"id":"tic-tac-no","createdAt":1770449956477}],"bloods":[]}}
